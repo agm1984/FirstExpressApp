@@ -50,12 +50,6 @@ var config = {};
 config.port = 3000;
 config.host = "localhost";
 
-// Key-Value Helper Function
-var keyVal = function(o) {
-    var key = Object.keys(o)[0];
-    return {"key": key, "value":o[key]};
-};
-
 // Start the server
 app.listen(config.port, config.host, function() {
     console.log("===============");
